@@ -1,8 +1,6 @@
 # My Matlab
 
-This repository contains functions, objects and scripts for Matlab I've created during my studies. They are mostly useful for data analysis. 
-
-Most useful scripts (in my opinion):
+This repository contains functions, objects and scripts for Matlab I've created during my studies. They are mostly useful for data analysis. Most useful scripts (in my opinion):
 
 ## myISA (function)
 
