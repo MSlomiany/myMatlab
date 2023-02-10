@@ -2,13 +2,17 @@
 
 This repository contains functions, objects and scripts for Matlab I've created during my studies. They are mostly useful for data analysis. Most useful and interesting scripts (in my opinion):
 
-## myISA (function)
+## myISA
 
-**[myISA](https://github.com/MSlomiany/myMatlab/blob/main/functions/myISA.m)** - my version of International Standard Atmoshere covering altitude range from 0 to 80 km, as MATLAB built-in fuction works properly only up to 12 km. At the time myISA returns only temperature and pressure at given altitude.
+>function
 
-## utility (object with static methods)
+**[`myISA.m`](https://github.com/MSlomiany/myMatlab/blob/main/functions/myISA.m)** - my version of International Standard Atmoshere covering altitude range from 0 to 80 km, as MATLAB built-in fuction works properly only up to 12 km. At the time myISA returns only temperature and pressure at given altitude.
 
-**[utility](https://github.com/MSlomiany/myMatlab/blob/main/objects/utility.m)** - is an object which allow to change groot settings and helps with formatting figures. I used it a lot as it reduce lines of code needed to create good-loking plots. Typical use case:
+## utility
+
+>object with static methods
+
+**[`utility.m`](https://github.com/MSlomiany/myMatlab/blob/main/objects/utility.m)** - is an object which allow to change groot settings and helps with formatting figures. I used it a lot as it reduce lines of code needed to create good-loking plots. Typical use case:
 
 Call this static method which clears all workspace and resets Matlab setting to defaults
 ```matlab
@@ -27,6 +31,15 @@ Then, in the last line of the script invoke method `utility.endcript()`. Note th
 ```matlab
 utility.endscript();
 ```
+
+## dataRecorder and dataViewer
+
+>scripts
+
+**[`dataRecorder.m`](https://github.com/MSlomiany/myMatlab/blob/main/scripts/dataRecorder.m)** is a script I've created during work on my master's thesis. It allows to register data from serial port (in this case MCU with IMU) and from digital multimeter using SCPI commands over TCP/IP protocol. **[`dataViewer.m`](https://github.com/MSlomiany/myMatlab/blob/main/scripts/dataViewer.m)** is associated script which allows to view and analyze recorded data.
+
 ## flight test demo
 
-This folder contains data from flight tests we conducted with Puchacz glider to analyse aircraft fugoidal oscillations. **[testy.m](https://github.com/MSlomiany/myMatlab/blob/main/flight%20test%20demo/testy.m)** is a script which prepares, analyzes and displays data. **[example.m](https://github.com/MSlomiany/myMatlab/blob/main/flight%20test%20demo/example.m)** is a short introduction to timetables in Matlab i wrote for one of my professors at my uni. Unfortunately only in Polish.
+>folder with demo scripts
+
+This **[folder](https://github.com/MSlomiany/myMatlab/tree/main/flight%20test%20demo)** contains data from flight tests we conducted with Puchacz glider to analyse aircraft fugoidal oscillations. **[`testy.m`](https://github.com/MSlomiany/myMatlab/blob/main/flight%20test%20demo/testy.m)** is a script which prepares, analyzes and displays data. **[`example.m`](https://github.com/MSlomiany/myMatlab/blob/main/flight%20test%20demo/example.m)** is a short introduction to timetables in Matlab i wrote for one of my professors at my uni. Unfortunately only in Polish.
