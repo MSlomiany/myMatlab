@@ -1,6 +1,6 @@
 # My Matlab
 
-This repository contains functions, objects and scripts for Matlab I've created during my studies. They are mostly useful for data analysis. Most useful scripts (in my opinion):
+This repository contains functions, objects and scripts for Matlab I've created during my studies. They are mostly useful for data analysis. Most useful and interesting scripts (in my opinion):
 
 ## myISA (function)
 
@@ -27,3 +27,6 @@ Then, in the last line of the script invoke method `utility.endcript()`. Note th
 ```matlab
 utility.endscript();
 ```
+## flight test demo
+
+This folder contains data from flight tests we conducted with Puchacz glider to analyse aircraft fugoidal oscillations. **[testy.m](https://github.com/MSlomiany/myMatlab/blob/main/flight%20test%20demo/testy.m)** is a script which prepares, analyzes and displays data. **[example.m](https://github.com/MSlomiany/myMatlab/blob/main/flight%20test%20demo/example.m)** is a short introduction to timetables in Matlab i wrote for one of my professors at my uni. Unfortunately only in Polish.
